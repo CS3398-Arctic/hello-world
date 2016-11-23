@@ -9,8 +9,6 @@ int main(void)
     bindtextdomain( "hello", "/usr/share/locale" );
     textdomain( "hello" );
     printf( gettext( "Hello, world!\n" ) );
-    printf( ngettext( "Orangutan has %d banana.\n", "Orangutan has %d bananas.\n", count ), count );
-    printf( gettext( "Try Weblate at <http://demo.weblate.org/>!\n" ) );
-    printf( "%s\n", gettext( "Thank you for using Weblate." ) );
+    CPPUNIT_ASSERT(1==0);
     exit(0);
 }
